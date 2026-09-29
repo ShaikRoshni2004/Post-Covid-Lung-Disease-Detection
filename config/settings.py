@@ -1,0 +1,53 @@
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATASET_DIR = PROJECT_ROOT / "dataset"
+TRAIN_DIR = DATASET_DIR / "train"
+VALIDATION_DIR = DATASET_DIR / "validation"
+TEST_DIR = DATASET_DIR / "test"
+MODEL_DIR = PROJECT_ROOT / "models"
+RESULTS_DIR = PROJECT_ROOT / "results"
+PLOTS_DIR = RESULTS_DIR / "plots"
+REPORTS_DIR = RESULTS_DIR / "reports"
+ASSETS_DIR = PROJECT_ROOT / "assets"
+IMAGE_SIZE = (224, 224)
+INPUT_SHAPE = (224, 224, 3)
+BATCH_SIZE = 32
+EPOCHS = 20
+LEARNING_RATE = 1e-4
+RANDOM_SEED = 42
+MODEL_PATH = MODEL_DIR / "best_model.keras"
+CLASS_NAMES_PATH = MODEL_DIR / "class_names.json"
+TRAINING_HISTORY_PATH = REPORTS_DIR / "training_history.json"
+TRAINING_METADATA_PATH = REPORTS_DIR / "training_metadata.json"
+EVALUATION_METRICS_PATH = REPORTS_DIR / "evaluation_metrics.json"
+CLASSIFICATION_REPORT_PATH = REPORTS_DIR / "classification_report.txt"
+CONFUSION_MATRIX_PATH = PLOTS_DIR / "confusion_matrix.png"
+TRAINING_HISTORY_PLOT_PATH = PLOTS_DIR / "training_history.png"
+
+__all__ = [
+    "PROJECT_ROOT",
+    "DATASET_DIR",
+    "TRAIN_DIR",
+    "VALIDATION_DIR",
+    "TEST_DIR",
+    "MODEL_DIR",
+    "RESULTS_DIR",
+    "PLOTS_DIR",
+    "REPORTS_DIR",
+    "ASSETS_DIR",
+    "IMAGE_SIZE",
+    "INPUT_SHAPE",
+    "BATCH_SIZE",
+    "EPOCHS",
+    "LEARNING_RATE",
+    "RANDOM_SEED",
+    "MODEL_PATH",
+    "CLASS_NAMES_PATH",
+    "TRAINING_HISTORY_PATH",
+    "TRAINING_METADATA_PATH",
+    "EVALUATION_METRICS_PATH",
+    "CLASSIFICATION_REPORT_PATH",
+    "CONFUSION_MATRIX_PATH",
+    "TRAINING_HISTORY_PLOT_PATH",
+]

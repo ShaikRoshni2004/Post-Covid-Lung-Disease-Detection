@@ -1,0 +1,22 @@
+{
+  "image_size": [
+    224,
+    224
+  ],
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "number_of_classes": 2,
+  "class_names": [
+    "COVID",
+    "Normal"
+  ],
+  "epochs_requested": 20,
+  "epochs_completed": 5,
+  "model_type": "VGG16 Transfer Learning",
+  "learning_rate": 0.0001,
+  "batch_size": 32,
+  "training_date": "2026-09-29 23:55:17"
+}

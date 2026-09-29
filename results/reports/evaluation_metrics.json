@@ -1,0 +1,12 @@
+{
+  "test_loss": 1.1513983011245728,
+  "test_accuracy": 0.5526315569877625,
+  "precision": 0.7699248120300751,
+  "recall": 0.5526315789473685,
+  "f1_score": 0.45904753680756444,
+  "num_classes": 2,
+  "class_names": [
+    "COVID",
+    "Normal"
+  ]
+}

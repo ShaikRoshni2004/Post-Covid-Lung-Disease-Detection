@@ -1,0 +1,46 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.pytest_cache/
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Local datasets and generated assets
+# Keep dataset README tracked, but ignore actual image files
+# and large local folders
+
+dataset/train/**
+dataset/validation/**
+dataset/test/**
+!dataset/README.md
+!dataset/train/
+!dataset/validation/
+!dataset/test/
+
+# Temporary uploads and local output artifacts
+uploads/
+tmp/
+*.tmp
+
+# Large local model files can be ignored, but metadata and reports should remain available
+models/*.keras
+models/*.h5
+models/*.pkl
+!models/README.md
+!models/class_names.json
+
+# Keep local project reports and visuals available for inspection
+!results/
+!results/plots/
+!results/reports/
+
+# Keep project source and metadata files under version control
+!requirements.txt
+!README.md
+!dataset/README.md
